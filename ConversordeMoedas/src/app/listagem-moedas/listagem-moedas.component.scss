@@ -1,90 +1,84 @@
-/* Geral */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #eaeaea; /* Cor de fundo mais clara */
+    background-color: #f0f8ff;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
-/* Breadcrumbs */
 .breadcrumbs {
-    background-color: #28a745; /* Verde vibrante */
-    color: white;
-    padding: 20px 0; /* Aumentar o padding */
+    background-color: transparent;
+    color: black;
+    padding: 15px 0;
 }
 
 .breadcrumbs .page-title {
     margin: 0;
-    font-size: 2.5rem; /* Aumentar o tamanho da fonte */
-    text-align: center; /* Centralizar título */
+    font-size: 2rem;
+    text-align: center;
 }
 
 .breadcrumb-nav {
     list-style: none;
     padding: 0;
-    text-align: center; /* Centralizar a navegação */
+    text-align: center;
 }
 
 .breadcrumb-nav li {
     display: inline;
-    margin-right: 15px; /* Aumentar espaço entre os itens */
+    margin-right: 10px;
 }
 
 .breadcrumb-nav a {
-    color: white;
-    text-decoration: underline; /* Sublinhar links */
+    color: black;
+    text-decoration: none;
 }
 
-/* Seção Principal */
 .section {
-    padding: 60px 0; /* Aumentar o padding */
+    padding: 50px 0;
 }
 
-/* Card Container */
 .card {
-    background: white;
-    border-radius: 12px; /* Canto arredondado maior */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
-    padding: 30px; /* Aumentar o padding */
-    margin: 30px 0; /* Aumentar o margin */
+    background: linear-gradient(145deg, #0074d9, #7fdbff);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
 }
 
-/* Card Header */
 .card-header {
-    margin-bottom: 25px; /* Aumentar o margin */
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .card-header h1 {
     margin: 0;
-    font-size: 2rem; /* Aumentar o tamanho da fonte */
-    color: #343a40; /* Cor mais escura */
-    text-align: center; /* Centralizar título */
+    font-size: 1.8rem;
+    color: #fff;
 }
 
-/* Search Container */
 .search-container {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: flex-end;
 }
 
 .search-input {
-    padding: 12px; /* Aumentar o padding */
-    width: 320px; /* Aumentar a largura */
-    border: 2px solid #28a745; /* Usar a nova cor */
-    border-radius: 8px; /* Canto arredondado */
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ff4136;
+    border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s;
 }
 
 .search-input:focus {
-    border-color: #218838; /* Tom mais escuro ao focar */
+    border-color: #ff6347;
     outline: none;
 }
 
-/* Tabela */
 .table-container {
-    margin-top: 25px; /* Aumentar o espaço acima da tabela */
+    margin-top: 20px;
 }
 
 table {
@@ -93,31 +87,29 @@ table {
 }
 
 th.mat-header-cell {
-    background-color: #28a745; /* Cabeçalho da tabela em verde */
+    background-color: #0074d9;
     color: white;
-    padding: 12px; /* Aumentar o padding */
+    padding: 10px;
     text-align: left;
 }
 
 td.mat-cell {
-    padding: 12px; /* Aumentar o padding */
-    border-bottom: 2px solid #ddd; /* Espessura do border */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
 td.mat-cell:hover {
-    background-color: #f8f9fa; /* Cor de fundo ao passar o mouse */
+    background-color: #f1f1f1;
 }
 
-/* Paginador */
 .mat-paginator {
-    margin-top: 25px; /* Aumentar o espaço acima do paginador */
+    margin-top: 20px;
 }
 
-/* Estilização para dispositivos móveis */
 @media (max-width: 768px) {
     .search-container {
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .search-input {
@@ -125,6 +117,6 @@ td.mat-cell:hover {
     }
 
     .card-header h1 {
-        font-size: 1.8rem; /* Ajustar tamanho da fonte */
+        font-size: 1.5rem;
     }
 }

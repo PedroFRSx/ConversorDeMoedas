@@ -1,145 +1,149 @@
-/* CSS do Footer */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; // Garante que o corpo ocupe pelo menos 100% da altura da viewport
+    display: flex;
+    flex-direction: column; // Permite que o conteúdo principal expanda para preencher o espaço disponível
+}
 
-/* Estilos Gerais do Footer */
+.main-content {
+    flex: 1; // Isso permite que o conteúdo principal expanda para preencher o espaço disponível
+    padding-bottom: 100px; // Ajuste conforme necessário para evitar sobreposição com o rodapé
+}
+
 .footer {
     background-color: #333;
     color: #fff;
     padding: 40px 0;
     font-size: 0.9rem;
-}
+    border-top: 1px solid #444;
+    text-align: center;
 
-/* Footer Top */
-.footer-top {
-    border-bottom: 1px solid #444;
-    padding-bottom: 30px;
-}
-
-/* Logo no Footer */
-.footer .logo img {
-    max-width: 150px; /* Ajuste o tamanho conforme necessário */
-    margin-bottom: 15px;
-}
-
-/* Texto no Footer */
-.footer p {
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-/* Links no Footer */
-.footer h3 {
-    color: #007bff;
-    margin-bottom: 15px;
-}
-
-.footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer ul li {
-    margin-bottom: 10px;
-}
-
-.footer ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer ul li a:hover {
-    color: #007bff;
-}
-
-/* Ícones de Redes Sociais */
-.social {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin-top: 15px;
-}
-
-.social li {
-    margin-right: 10px;
-}
-
-.social li a {
-    color: #fff;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
-
-.social li a:hover {
-    color: #007bff;
-}
-
-/* Footer Newsletter */
-.footer-newsletter {
-    background-color: #444;
-    padding: 20px 0;
-}
-
-.footer-newsletter .title h3 {
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.footer-newsletter .title p {
-    margin-bottom: 20px;
-}
-
-/* Formulário da Newsletter */
-.newsletter-form {
-    display: flex;
-    align-items: center;
-}
-
-.newsletter-form input[type="email"] {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    flex: 1;
-    margin-right: 10px;
-    font-size: 1rem;
-}
-
-.newsletter-form .btn {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.newsletter-form .btn:hover {
-    background-color: #0056b3;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .footer .row {
-        flex-direction: column;
-        align-items: center;
+    .footer-top {
+        padding-bottom: 30px;
     }
 
-    .footer-newsletter .title {
+    h3 {
+        color: #007bff;
+        margin-bottom: 15px;
+    }
+
+    p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 10px;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: #007bff;
+                }
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        padding: 0;
+        list-style: none;
+
+        li {
+            margin-right: 10px;
+
+            a {
+                color: #fff;
+                font-size: 1.2rem;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: #007bff;
+                }
+            }
+        }
+    }
+
+    .footer-newsletter {
+        background-color: #444;
+        padding: 20px 0;
         text-align: center;
-        margin-bottom: 20px;
+
+        .title {
+            h3 {
+                color: #fff;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+        }
+
+        .newsletter-form {
+            display: flex;
+            align-items: center;
+
+            input[type="email"] {
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                flex: 1;
+                margin-right: 10px;
+                font-size: 1rem;
+            }
+
+            .btn {
+                background-color: #007bff;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #0056b3;
+                }
+            }
+        }
     }
 
-    .newsletter-form {
-        flex-direction: column;
-        width: 100%;
-    }
+    @media (max-width: 768px) {
+        .row {
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .newsletter-form input[type="email"] {
-        margin-bottom: 10px; /* Espaço entre o input e o botão */
-        width: 100%;
-    }
+        .footer-newsletter .title {
+            margin-bottom: 20px;
+        }
 
-    .newsletter-form .btn {
-        width: 100%;
+        .newsletter-form {
+            flex-direction: column;
+            width: 100%;
+
+            input[type="email"] {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
     }
 }

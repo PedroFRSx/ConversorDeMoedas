@@ -1,6 +1,6 @@
-/* CSS do Conversor de Moedas */
 
-/* Preloader */
+
+
 .preloader {
     position: fixed;
     top: 0;
@@ -45,7 +45,7 @@
     }
 }
 
-/* Breadcrumbs */
+
 .breadcrumbs {
     background-color: #f9f9f9;
     padding: 20px 0;
@@ -76,7 +76,7 @@
     color: #666;
 }
 
-/* Seção do Conversor */
+
 .section.blog-single {
     padding: 40px 0;
 }
@@ -88,7 +88,7 @@
     padding: 20px;
 }
 
-/* Cartão do Conversor */
+
 .modern-converter-card {
     padding: 20px;
     border-radius: 8px;
@@ -119,7 +119,7 @@
     color: #007bff;
 }
 
-/* Formulário do Conversor */
+
 .modern-converter-form {
     margin-top: 20px;
 }
@@ -130,7 +130,7 @@
     justify-content: space-between;
 }
 
-/* Input de Valor */
+
 .modern-amount-input {
     flex: 1;
     margin-right: 10px;
@@ -162,13 +162,13 @@ input[type="number"]:focus {
     outline: none;
 }
 
-/* Seletores de Moeda */
+
 .currency-selectors {
     display: flex;
     align-items: center;
 }
 
-/* Botão de Troca */
+
 .switch-currencies {
     background: transparent;
     border: none;
@@ -178,7 +178,7 @@ input[type="number"]:focus {
     color: #007bff;
 }
 
-/* Seletores de Moeda */
+
 .currency-select-wrapper {
     flex: 1;
     margin: 0 5px;
@@ -203,7 +203,7 @@ select:focus {
     border: 1px solid #007bff;
 }
 
-/* Botão de Conversão */
+
 .modern-convert-button {
     margin-top: 20px;
     background-color: #007bff;
@@ -220,7 +220,7 @@ select:focus {
     background-color: #0056b3;
 }
 
-/* Resultado da Conversão */
+
 .modern-result-card {
     margin-top: 20px;
     padding: 15px;
@@ -294,37 +294,6 @@ select:focus {
 .rate-value {
     font-size: 1rem;
     font-weight: bold;
-}
-
-/* Compartilhamento em Redes Sociais */
-.post-social-media {
-    margin-top: 20px;
-}
-
-.post-social-media h5 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.post-social-media ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-.post-social-media ul li {
-    margin-right: 10px;
-}
-
-.post-social-media ul li a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.post-social-media ul li a:hover {
-    color: #0056b3;
 }
 
 /* Responsividade */

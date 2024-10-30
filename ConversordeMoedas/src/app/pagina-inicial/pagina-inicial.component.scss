@@ -1,11 +1,8 @@
-/* CSS da Página Principal */
-
-/* Estilos Globais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f0f8ff;
     color: #333;
 }
 
@@ -14,116 +11,68 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-}
-
-/* Header */
-.header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 15px 0;
     text-align: center;
 }
 
-.header h1 {
-    font-size: 1.8rem;
+.section-title h2, .hero-content h1, .hero-content p, .btn-custom, .single-feature, .single-feature h3, .single-feature p {
+    text-align: center;
+}
+
+.section-title h2 {
+    color: #0074d9;
+    font-size: 2rem;
     font-weight: bold;
-    margin: 0;
+    margin-bottom: 30px;
 }
 
-/* Seção de Introdução */
-.intro {
-    text-align: center;
-    padding: 30px 0;
-    color: #333;
+.hero-content {
+    h1 {
+        color: #ff4136;
+        font-size: 2.8rem;
+        font-weight: bold;
+    }
+    p {
+        color: #666;
+        font-size: 1.3rem;
+        max-width: 800px;
+        margin: 15px auto 30px;
+    }
 }
 
-.intro h2 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.intro p {
-    font-size: 1rem;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-/* Botão de Ação */
-.btn {
-    background-color: #007bff;
+.btn-custom {
+    background-color: #ff851b;
     color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: 500;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s;
-    margin-top: 20px;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-/* Seção de Funcionalidades */
-.features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    margin: 30px 0;
-}
-
-.feature-box {
-    flex: 1 1 300px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: none;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: box-shadow 0.3s;
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: #ff6347;
+    }
 }
 
-.feature-box:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.feature-box h3 {
-    font-size: 1.2rem;
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-.feature-box p {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-/* Rodapé */
-.footer {
-    background-color: #333;
+.single-feature {
+    background: linear-gradient(145deg, #0074d9, #7fdbff);
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 0.9rem;
-}
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
 
-.footer a {
-    color: #007bff;
-    text-decoration: none;
-}
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    }
 
-.footer a:hover {
-    text-decoration: underline;
-}
+    h3 {
+        font-size: 1.5rem;
+        color: #fff;
+        margin-bottom: 15px;
+    }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .features {
-        flex-direction: column;
-        align-items: center;
+    p {
+        font-size: 1rem;
+        color: #fefefe;
     }
 }

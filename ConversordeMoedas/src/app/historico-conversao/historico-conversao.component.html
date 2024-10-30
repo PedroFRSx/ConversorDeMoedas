@@ -6,58 +6,51 @@
                     <div class="post-details">
                         <div class="main-content-head">
                             <div class="meta-information">
-                                <div class="history-container" style="background: linear-gradient(145deg, #0074d9, #7fdbff); border-radius: 15px; padding: 20px; color: #fff; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); margin-top: 20px;">
+                                <div class="history-container">
                                     <div class="history-header">
-                                        <h3 style="color: #fff;">Histórico de Conversões</h3>
-                                        <button *ngIf="historico.length > 0" class="clear-history-btn"
-                                            (click)="limparHistorico()" style="background-color: #ff4136; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+                                        <h3>Histórico de Conversões</h3>
+                                        <button *ngIf="historico.length > 0" class="clear-history-btn" (click)="limparHistorico()">
                                             <i class="lni lni-trash-can"></i>
                                             Limpar Histórico
                                         </button>
                                     </div>
-
                                     <div class="history-content" *ngIf="historico.length > 0">
-                                        <div class="conversion-card" *ngFor="let item of historico; let i = index" style="background: rgba(255, 255, 255, 0.1); border-radius: 10px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+                                        <div class="conversion-card" *ngFor="let item of historico; let i = index">
                                             <div class="conversion-header">
-                                                <div class="conversion-date" style="color: #fff;">
+                                                <div class="conversion-date">
                                                     <i class="lni lni-calendar"></i>
                                                     {{ item.data }} às {{ item.hora }}
                                                 </div>
-                                                <button class="delete-btn" (click)="excluirConversao(i)" title="Excluir conversão" style="background: none; border: none; color: #ff4136;">
+                                                <button class="delete-btn" (click)="excluirConversao(i)" title="Excluir conversão">
                                                     <i class="lni lni-trash-can"></i>
                                                 </button>
                                             </div>
-
-                                            <div class="conversion-body" style="display: flex; justify-content: center; align-items: center; margin: 10px 0;">
-                                                <div class="amount-from" style="font-size: 1.5rem; color: #fff;">
+                                            <div class="conversion-body">
+                                                <div class="amount-from">
                                                     <span class="amount">{{ item.valor | number:'1.2-2' }}</span>
                                                     <span class="currency">{{ item.moedaOrigem }}</span>
                                                 </div>
-
-                                                <div class="conversion-arrow" style="color: #fff;">
+                                                <div class="conversion-arrow">
                                                     <i class="lni lni-arrow-right"></i>
                                                 </div>
-
-                                                <div class="amount-to" style="font-size: 1.5rem; color: #fff;">
+                                                <div class="amount-to">
                                                     <span class="amount">{{ item.resultado | number:'1.2-2' }}</span>
                                                     <span class="currency">{{ item.moedaDestino }}</span>
                                                 </div>
                                             </div>
-
                                             <div class="conversion-footer">
-                                                <div class="exchange-rate" style="margin-top: 10px; font-size: 0.9rem; color: #fff;">
+                                                <div class="exchange-rate">
                                                     <span class="rate-label">Taxa de câmbio:</span>
                                                     <span class="rate-value">{{ item.taxa | number:'1.4-4' }}</span>
                                                 </div>
                                             </div>
-                                            <button (click)="excluirConversao(i)" class="btn-excluir" style="background: none; border: none; color: #ff4136;">
+                                            <button (click)="excluirConversao(i)" class="btn-excluir">
                                                 <span class="material-icons">delete</span>
                                             </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                           
                         </div>
                     </div>
                 </div>
