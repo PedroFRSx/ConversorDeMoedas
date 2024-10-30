@@ -1,0 +1,145 @@
+/* CSS do Footer */
+
+/* Estilos Gerais do Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 0.9rem;
+}
+
+/* Footer Top */
+.footer-top {
+    border-bottom: 1px solid #444;
+    padding-bottom: 30px;
+}
+
+/* Logo no Footer */
+.footer .logo img {
+    max-width: 150px; /* Ajuste o tamanho conforme necessário */
+    margin-bottom: 15px;
+}
+
+/* Texto no Footer */
+.footer p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Links no Footer */
+.footer h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #007bff;
+}
+
+/* Ícones de Redes Sociais */
+.social {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-top: 15px;
+}
+
+.social li {
+    margin-right: 10px;
+}
+
+.social li a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social li a:hover {
+    color: #007bff;
+}
+
+/* Footer Newsletter */
+.footer-newsletter {
+    background-color: #444;
+    padding: 20px 0;
+}
+
+.footer-newsletter .title h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-newsletter .title p {
+    margin-bottom: 20px;
+}
+
+/* Formulário da Newsletter */
+.newsletter-form {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.newsletter-form .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-newsletter .title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter-form input[type="email"] {
+        margin-bottom: 10px; /* Espaço entre o input e o botão */
+        width: 100%;
+    }
+
+    .newsletter-form .btn {
+        width: 100%;
+    }
+}

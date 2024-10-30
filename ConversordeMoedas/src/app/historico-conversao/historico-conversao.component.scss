@@ -1,0 +1,180 @@
+/* Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 0;
+}
+
+.breadcrumbs .page-title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.breadcrumb-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.breadcrumb-nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.breadcrumb-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Seção do histórico */
+.section {
+    padding: 50px 0;
+}
+
+.single-inner {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.history-container {
+    margin: 20px 0;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history-header h3 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.clear-history-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-history-btn i {
+    margin-right: 5px;
+}
+
+/* Histórico de conversões */
+.history-content {
+    margin-top: 20px;
+}
+
+.conversion-card {
+    background: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+    position: relative;
+}
+
+.conversion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conversion-date {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.conversion-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.amount-from,
+.amount-to {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.conversion-arrow {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.conversion-footer {
+    margin-top: 10px;
+}
+
+.exchange-rate {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Botão de exclusão */
+.btn-excluir {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #dc3545;
+}
+
+/* Compartilhamento em redes sociais */
+.post-social-media {
+    margin-top: 20px;
+}
+
+.post-social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.post-social-media li {
+    margin: 0 10px;
+}
+
+.post-social-media a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.post-social-media a:hover {
+    color: #0056b3;
+}
+
+/* Estilização para dispositivos móveis */
+@media (max-width: 768px) {
+    .history-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .clear-history-btn {
+        margin-top: 10px;
+    }
+}
